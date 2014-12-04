@@ -1,0 +1,4 @@
+{
+  hostname: 'changeme',
+  box: 'precise',
+}
