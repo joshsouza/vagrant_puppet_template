@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
         puppet.module_path = 'puppet/modules'
         puppet.facter = CONF['facts'] || {}
       end
-      if File.exist?('puppet/manifests/' + node[:hostname] + '.pp') do
+      if File.exist?('puppet/manifests/' + node[:hostname] + '.pp')
         # Provision using puppet
         node_config.vm.provision :puppet do |puppet|
           puppet.manifests_path = 'puppet/manifests'
